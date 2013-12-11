@@ -1,0 +1,26 @@
+ <?php
+	  	$currentFile = $_SERVER["PHP_SELF"];
+  		$parts = Explode('/', $currentFile);
+  		$parts = $parts[count($parts) - 1];
+  		$parts = Explode('.', $parts);
+  		$pageName = $parts[0];
+
+  		$pageName= basename($_SERVER['REQUEST_URI'], '.php');
+  		echo "<title>", $pageName, "</title>\n";
+  		?>
+
+ <meta charset="UTF-8"> 
+    <!--Responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	 <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+     <!-- Style for Template heads -->
+    <link rel="stylesheet" href="css/style.css"/>   
+
+    <link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
+
+      <!-- Google Fonts - 'Montserrat'-->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+      <!-- Google Fonts - 'The Girl Next Door'-->
+    <link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
+

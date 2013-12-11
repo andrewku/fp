@@ -1,0 +1,27 @@
+ <footer>
+
+         
+    	
+         
+  		    <p> 
+
+          © Andrew Ku 2013<br>  
+
+          <span id="time"><?php
+           // outputs e.g.  somefile.txt was last modified: December 29 2002 22:16:23.
+
+          $filename = basename($_SERVER['REQUEST_URI']);
+          if (file_exists($filename)) {
+           echo "$filename last mod: " . date ("F d Y H:i.", filemtime($filename));
+           }
+          ?> <span>
+          </p> 
+        
+
+       
+  		 
+  	
+
+	    
+
+    </footer>
